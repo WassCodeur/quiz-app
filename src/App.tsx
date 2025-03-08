@@ -45,7 +45,7 @@ function App() {
             answers={answers}
             correct_answer={questions[index]?.correct_answer}
             nextQuestion={nextQuestion}
-            index={index}
+          
           />
         )}
       </header>

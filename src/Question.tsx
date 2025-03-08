@@ -10,13 +10,13 @@ interface QuestionProps {
   answers: string[];
 
   correct_answer: string;
-  index: number;
+
   nextQuestion: () => void;
 
 }
 // , answers, correct_answer
 
-const Question: React.FC<QuestionProps> = ({ question, answers, correct_answer, index, nextQuestion }) => {
+const Question: React.FC<QuestionProps> = ({ question, answers, correct_answer, nextQuestion }) => {
   const answersClass = document.getElementsByClassName('answer')
   const [score, setScore] = useState(0)
   const [numberOFAttempts, setNumberOFAttempts] = useState(0)
